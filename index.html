@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <header>
+        Sketchbox
+    </header>
+
+    <div id="toolbar"> 
+    <input type="button" value="Rectangle" id="btnRect" class="button">
+    <input type="button" value="Oval" id="btnOval" class="button">
+    <input type="color" value="#000000" id="btnColor" class="button btnColor">
+    <input type="button" value="Delete" id="btnDelete" class="button">
+    <input type="button" value="Clear" id="btnClear" class="button">
+    <input type="button" value="Save" id="btnSave" class="button btnSave">
+    <input type="button" value="Load" id="btnLoad" class="button">
+    </div>
+
+    <div id="canvas"></div>
+</div>
+
+<div id="dialogWindow">
+    <div class="dialog" id="saveDialog">
+        <div class="dialogHeader">
+            <span class="dialogHeaderTitle">Save</span>
+            <input type="button" value="X" class="dialogExitButton">
+        </div>
+        <div class="dialogMessage">
+            <label for="saveName">Save:</label>
+            <input type="text" id="saveName"> 
+            <input type="button" value="save" id="dialogBtnSave">
+        </div>
+    </div>
+
+    <div class="dialog" id="loadDialog">
+        <div class="dialogHeader">
+            <span class="dialogHeaderTitle">Load</span>
+            <input type="button" value="X" class="dialogExitButton">
+        </div>
+        <div class="dialogMessage">
+            <label for="loadName">Load:</label>
+            <select id="loadName"></select>
+            <input type="button" value="load" id="dialogBtnLoad">
+        </div>
+    </div>
+
+    <div id="message">
+        <div class="messageText">
+            <span>Saved successfully</span>
+        </div>
+    </div>
+</div>
+
+<footer><small>&copy; Copyright 2021</small></footer>
+</body>
+</html>
